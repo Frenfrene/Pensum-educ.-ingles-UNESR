@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto&display=swap');
+
+body {
+  background: #fff0f6;
+  font-family: 'Roboto', sans-serif;
+  color: #4b004b;
+  margin: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  color: #d6336c;
+  margin-bottom: 0.2em;
+  font-size: 3rem;
+  text-shadow: 1px 1px 4px #ffc1e3;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #7a3e65;
+  font-weight: 500;
+}
+
+#malla-container {
+  display: grid;
+  grid-template-columns: repeat(6, 160px);
+  grid-gap: 15px 10px;
+  max-width: 1020px;
+  justify-content: center;
+}
+
+.ramo {
+  background: #f8bbd0;
+  border: 2px solid #d6336c;
+  border-radius: 12px;
+  padding: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-align: center;
+  user-select: none;
+  box-shadow: 0 4px 6px #e75480cc;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  color: #4b004b;
+  line-height: 1.2;
+  min-height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ramo.aprobado {
+  background: #d6336c;
+  color: #fff0f6;
+  box-shadow: 0 0 10px 3px #ff80abcc;
+}
+
+.ramo.bloqueado {
+  background: #f8bbd0;
+  border-color: #f48fb1;
+  color: #a3486d;
+  cursor: not-allowed;
+  opacity: 0.5;
+  box-shadow: none;
+}
+
+.semestre-label {
+  grid-column: span 6;
+  font-family: 'Pacifico', cursive;
+  font-size: 1.5rem;
+  color: #9c27b0;
+  margin: 25px 0 10px 0;
+  text-align: center;
+  text-shadow: 1px 1px 3px #f48fb1;
+}
